@@ -5,7 +5,21 @@ query($customerAccessToken: String!) {
     lastName
     email
     phone
-    defaultAddress
-    orders
+    defaultAddress {
+      address1
+      address2
+      city
+      company
+      country
+      countryCodeV2
+      firstName
+      id
+      lastName
+      phone
+      province
+      provinceCode
+      zip
+      countryCode
+    }
   }
 }
