@@ -4,15 +4,15 @@ export default function handleCustomerMutation(mutationRootKey) {
       const rootData = data[mutationRootKey];
 
       if (errors && errors.length) {
-        return Promise.reject(new Error(JSON.stringify(errors)));
+        return Promise.reject(errors);
       }
 
       if (rootData && rootData.customerUserErrors && rootData.customerUserErrors.length) {
-        return Promise.reject(new Error(JSON.stringify(rootData.customerUserErrors)));
+        return Promise.reject(rootData.customerUserErrors);
       }
 
       if (rootData && rootData.userErrors && rootData.userErrors.length) {
-        return Promise.reject(new Error(JSON.stringify(rootData.userErrors)));
+        return Promise.reject(rootData.userErrors);
       }
 
       if (rootData) {

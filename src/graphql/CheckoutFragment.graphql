@@ -68,6 +68,7 @@ fragment CheckoutFragment on Checkout {
   createdAt
   updatedAt
   email
+  buyerIdentity
   discountApplications(first: 10) {
     pageInfo {
       hasNextPage
