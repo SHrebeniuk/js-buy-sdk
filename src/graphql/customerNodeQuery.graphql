@@ -3,6 +3,5 @@ query($customerAccessToken: String!) {
     id
     firstName
     lastName
-    tags
   }
 }
