@@ -3,5 +3,9 @@ query($customerAccessToken: String!) {
     id
     firstName
     lastName
+    email
+    phone
+    defaultAddress
+    orders
   }
 }
