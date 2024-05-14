@@ -23,6 +23,9 @@ fragment CheckoutFragment on Checkout {
   ready
   requiresShipping
   note
+  buyerIdentity {
+    countryCode
+  }
   paymentDue {
     amount
     currencyCode
@@ -68,7 +71,6 @@ fragment CheckoutFragment on Checkout {
   createdAt
   updatedAt
   email
-  buyerIdentity
   discountApplications(first: 10) {
     pageInfo {
       hasNextPage

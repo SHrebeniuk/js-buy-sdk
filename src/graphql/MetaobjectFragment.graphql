@@ -1,0 +1,17 @@
+fragment MetaobjectFragment on Metaobject {
+  id
+  handle
+  type
+  fields {
+    type
+    key
+    value
+    reference {
+      ... on MediaImage {
+        image {
+          originalSrc
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+query ($handle: MetaobjectHandleInput) {
+  metaobject(handle: $handle) {
+    ...MetaobjectFragment
+  }
+}
